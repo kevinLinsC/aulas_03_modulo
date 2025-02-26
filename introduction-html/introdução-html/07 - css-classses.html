@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        p{
+            color: green;
+        }
+
+        /* a classe é representada por um . antes do nome */
+        /* a classe sobrepoem os estilos dos seletores genericos */
+        .vermelho{
+            color: red;
+        }
+
+
+        .azul{
+            color: blue;
+        }
+
+        /* background-color é um atributo com mais configurações sendo aqui trocando apenas a cor de fundo */
+        .bgciano{
+            background-color: cyan;
+        }
+
+        /* o id sobrepoem a classe */
+        #roxo{
+            color: purple;
+        }
+        
+        h1, h2{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Classes css</h1>
+    <h2>Veja exemplos abaixo</h2>
+    <p>Olá mundo</p>
+    <p>Olá mundo</p>
+    <p class="vermelho">Eu sou vermelho</p>
+    <p class="azul">Eu sou azul</p>
+    <p class="bgciano">Eu tenho background ciano</p>
+    <p id="roxo" class="azul">Atenção</p>
+    <!-- css inline sobrepoem classes e ids -->
+    <p id="roxo" class="bgciano" style="color:brown; background-color: aliceblue;">Tudo muda</p>
+    <!-- podemos aplicar varias classes separando-as por espaço -->
+    <p class="bgciano vermelho">Aqui é azul e vermelho</p>
+</body>
+</html>

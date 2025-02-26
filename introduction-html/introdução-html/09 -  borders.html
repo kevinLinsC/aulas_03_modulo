@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #login{
+            width: 500px;
+            height: 400px;
+            margin: 50px auto;
+            background-color: green;
+            text-align: center;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        #login img{
+            height: 200px;
+            border-radius: 15px;
+        }
+
+        #login h3{
+            color: white;
+        }
+
+        #btn-login{
+            margin-top: 20px;
+            background-color: lightgray;
+            height: 30px;
+            width: 50px;
+            border-radius: 15px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <img src="images/WRLD.jpg" alt=""><br>
+        <h3>Efetue login</h3>
+
+        <label for="nome">Nome</label>
+        <input placeholder="José" id="nome" type="text"><br><br>
+
+        <label for="senha">Senha</label>
+        <input placeholder="******" type="password" id="senha"><br><br>
+
+        <input id="btn-login" type="submit" value="Login">
+    </div>
+</body>
+</html>

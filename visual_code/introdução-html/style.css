@@ -1,0 +1,9 @@
+#juice{
+    border: 10px solid rgb(223, 74, 74);
+    animation-name: rotation;
+    animation-duration: 4s;
+}
+
+@keyframes rotation {
+    from{transform: translateY(200%);}
+}

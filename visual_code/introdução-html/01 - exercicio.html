@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        #Frutas{
+            background-color: hsl(0, 59%, 41%);
+            color: white;
+        }
+
+        #Verduras{
+            background-color: hsl(0, 91%, 18%);
+            color: white;
+        }
+
+        #Graos{
+            background-color: hsl(0, 100%, 73%);
+            color: white;
+        }
+
+        #pontos{
+            background-color: hsl(0, 26%, 18%);
+            color: white;
+        }
+
+        .Frutas{
+            background-color: hsl(34, 69%, 85%);
+        }
+
+        .Verduras{
+            background-color: burlywood;
+        }
+
+        .Graos{
+            background-color: blanchedalmond;
+        }
+
+        .pontos{
+            background-color: lightblue;
+        }
+
+        table, td, th{
+            border-collapse: collapse;
+            border-spacing: 2;
+            border: 1px solid rgba(218, 31, 255, 1);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th id="Frutas">Frutas</th>
+                <th id="Verduras">Verduras</th>
+                <th id="Graos">Grãos</th>
+                <th id="pontos">...</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="Frutas">Maça</td>
+                <td class="Verduras">Alface</td>
+                <td class="Graos">Arroz</td>
+                <td class="pontos" rowspan="3">3 linhas</td>
+            </tr>
+            
+            <tr>
+                <td class="Frutas">Laranja</td>
+                <td class="Verduras">Beterraba</td>
+                <td class="Graos">Trigo</td>
+            </tr>
+            
+            <tr>
+                <td class="pontos" colspan="3">3 colunas</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
